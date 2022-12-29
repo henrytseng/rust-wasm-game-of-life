@@ -1,0 +1,69 @@
+Arguments: 
+  /home/henry/lib/emsdk/node/14.18.2_64bit/bin/node /home/henry/.yarn/bin/yarn.js install
+
+PATH: 
+  /home/henry/anaconda3/bin:/home/henry/anaconda3/condabin:/home/henry/.cargo/bin:node_modules/.bin:/home/henry/bin:/home/henry/lib/emsdk:/home/henry/lib/emsdk/upstream/emscripten:/home/henry/lib/emsdk/node/14.18.2_64bit/bin:/home/henry/.pyenv/versions/3.8.12/bin:/home/henry/.pyenv/libexec:/home/henry/.pyenv/plugins/python-build/bin:/home/henry/.pyenv/plugins/pyenv-virtualenv/bin:/home/henry/.pyenv/plugins/pyenv-update/bin:/home/henry/.pyenv/plugins/pyenv-installer/bin:/home/henry/.pyenv/plugins/pyenv-doctor/bin:/home/henry/.local/bin:/home/henry/.yarn/bin:/home/henry/.config/yarn/global/node_modules/.bin:/home/henry/.rvm/bin:/home/henry/google-cloud-sdk/bin:/home/henry/.pyenv/shims:/home/henry/.pyenv/bin:/usr/local/bin:/usr/local/sbin:/home/henry/.rvm/gems/ruby-2.6.3/bin:/home/henry/.rvm/gems/ruby-2.6.3@global/bin:/home/henry/.rvm/rubies/ruby-2.6.3/bin:/usr/bin:/var/lib/snapd/snap/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:.jiri_root/bin:/opt/bin:/home/henry/go/bin:/usr/local/go/bin:/home/henry/lib/flutter/bin:/home/henry/bin:/home/henry/anvyl/bin:/home/henry/.rvm/bin:/home/henry/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.18.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/henry/playground/rust-wasm-gameoflife/wasm-game-of-life/www/package.json: Unexpected token } in JSON at position 810
+      at JSON.parse (<anonymous>)
+      at /home/henry/.yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/home/henry/.yarn/lib/cli.js:310:30)
+      at /home/henry/.yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "create-wasm-app",
+    "version": "0.1.0",
+    "description": "create an app to consume rust-generated wasm packages",
+    "main": "index.js",
+    "bin": {
+      "create-wasm-app": ".bin/create-wasm-app.js"
+    },
+    "scripts": {
+      "build": "webpack --config webpack.config.js",
+      "start": "webpack-dev-server"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/rustwasm/create-wasm-app.git"
+    },
+    "keywords": [
+      "webassembly",
+      "wasm",
+      "rust",
+      "webpack"
+    ],
+    "author": "Ashley Williams <ashley666ashley@gmail.com>",
+    "license": "(MIT OR Apache-2.0)",
+    "bugs": {
+      "url": "https://github.com/rustwasm/create-wasm-app/issues"
+    },
+    "homepage": "https://github.com/rustwasm/create-wasm-app#readme",
+    "dependencies": {
+      "wasm-game-of-life": "file:../pkg",
+    },
+    "devDependencies": {
+      "hello-wasm-pack": "^0.1.0",
+      "webpack": "^4.29.3",
+      "webpack-cli": "^3.1.0",
+      "webpack-dev-server": "^3.1.5",
+      "copy-webpack-plugin": "^5.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
